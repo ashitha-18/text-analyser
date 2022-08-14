@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text</title>
+
+    <!-- roboto font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="heading">
+        text ANALYSER
+    </div>
+    <div class="main">
+    <div class="text-wrapper">
+      <textarea id="text" spellcheck="false"></textarea>
+      <button onclick="setText()">Generate Info</button>
+    </div>
+
+    <script src="textInfo.js"></script>
+
+    <div class="info-wrapper">  
+    </div>
+    <script>
+        window.onload = () => {
+          showData();
+        };
+  
+    </script>
+    
+    <div class="next">
+        <button onclick="setText()">Next</button> 
+    </div>
+    </div>
+    
+  </body>
+</html>
